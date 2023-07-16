@@ -1,38 +1,113 @@
-.App {
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: linear-gradient(to right, #ff99661d, #ff5e612b);
+}
+
+h1 {
+  margin: 5px 0 5px;
+  font-size: 40px;
+  font-weight: 120px;
+  line-height: 28px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  margin: 0 0 15px;
+  padding: 0;
+}
+li {
+  list-style: none;
+  font-weight: 100;
+  line-height: 1.1;
+  color: black;
+}
+li::first-letter {
+  text-transform: capitalize;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 16px;
+  color: black;
+}
+.weather-app {
+  border: 1px solid white;
+  padding: 15px;
+  margin: 50px auto;
+  max-width: 700px;
+  border-radius: 10px;
+  background: linear-gradient(
+    180.3deg,
+    rgb(221, 221, 221) 5.5%,
+    rgba(245, 87, 166, 0.801) 90.2%
+  );
+  opacity: 0.9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#search-button {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#search-button:hover {
+  transition: all 200ms ease-in-out;
+  background-color: black;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#current-button {
+  background-color: white;
+  color: rgba(245, 87, 166, 0.801) 90.2%;
+  border: 1px solid rgb(216, 208, 214);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#current-button:hover {
+  transition: all 200ms ease-in-out;
+  background-color: rgba(245, 87, 166, 0.801) 90.2%;
+  color: white;
+}
+#description {
+  font-size: 18px;
+}
+.temperature-big {
+  color: rgb(33, 33, 33);
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1;
+  position: relative;
+  left: -25px;
+}
+.units {
+  position: relative;
+  top: -45px;
+  left: -25px;
+}
+.weather-icon {
+  position: relative;
+  left: -22px;
+  top: -20px;
+  width: 150px;
+}
+.weather-extra-info {
+  text-align: right;
+  margin-top: 25px;
+  font-size: 18px;
+}
+.weekly-forecast {
+  text-align: center;
+  background: linear-gradient(to right, #ff99661d, #ff5e612b);
+  border-radius: 10px;
+  color: white;
+}
+.forecast-days .forecast-temp {
+  font-size: 20px;
+}
+.min-temp {
+  opacity: 0.6;
+}
+.git-emoji {
+  width: 25px;
+  clip-path: circle();
+}
+.name {
+  color: gainsboro;
+  font-style: italic;
 }
