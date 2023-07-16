@@ -70,8 +70,7 @@ export default function App(props) {
     <a href="https://github.com/GeraAP/reakt_weather_app" target="_blank">Github</a>
     <span class="name"> by Anna Herasymeniuk </span>
     <br/>
-
-    <span>Hosted by </span><a href="https://strong-sunshine-662ba7.netlify.app" target="_blank">Netlify</a>
+<a href="https://tourmaline-croquembouche-5bfcdd.netlify.app" target="_blank">Netlify</a>
 </footer>
         </div>
       );
